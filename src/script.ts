@@ -1,7 +1,8 @@
 (function() {
     document.getElementById('guess-form').addEventListener("submit", compareUserGuess);
 
-    function compareUserGuess (event) {
+    // function with void can't return anything
+    function compareUserGuess (event):void {
         event.preventDefault();
 
         const secretNumber = generateSecretNumber();
@@ -12,15 +13,16 @@
         } else {
             alert("Bummer... You guessed " + userNumber + " and the secret number was " + secretNumber + ".");
         }
+
     }
 
-    function generateSecretNumber() {
+    function generateSecretNumber():number {
         const secretNumber = getRandomArbitrary(1, 22);
 
         return secretNumber;
     }
 
-    function getRandomArbitrary(min, max) {
+    function getRandomArbitrary(min:number, max:number):number {
         return Math.round(Math.random() * (max - min) + min);
     }
 })();
