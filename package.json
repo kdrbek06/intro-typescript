@@ -1,0 +1,27 @@
+{
+  "name": "intro-typescript",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "tsc": "tsc",
+    "tscw": "tsc --watch",
+    "wp": "webpack",
+    "wpw": "webpack --watch"
+  },
+  "keywords": [
+    "javascript",
+    "typescript",
+    "webpack",
+    "boilerplate"
+  ],
+  "author": "Kadir Bek <https://github.com/kdrbek06>",
+  "license": "ISC",
+  "devDependencies": {
+    "ts-loader": "^9.2.5",
+    "typescript": "^4.4.3"
+  },
+  "dependencies": {
+    "webpack": "^5.52.1"
+  }
+}
